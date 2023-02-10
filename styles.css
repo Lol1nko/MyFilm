@@ -1,0 +1,225 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5vh;
+    background-color: #0d0e12;
+}
+nav #hamburger{
+    display: none;
+    
+
+}
+nav p{
+    color: white;
+    text-align: center;
+    margin: 0;
+    
+
+}
+nav div{
+    background-color: #0d0e12;
+    flex-grow:1;
+    height: 100%;
+    
+}
+nav a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav div:hover{
+    background-color: #1c1f25;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    background-image: url(img/tokyo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+#title {
+    background-color: #13161b;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    padding: 25px;
+    font-size: 3rem;
+}
+.photo{
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    height: 80vh;
+}
+.category-nav{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    bottom: 37.5px;
+   
+}
+.dot {
+    box-sizing: border-box;
+    height: 75px;
+    width: 75px;
+    background-color: #13161b;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img {
+    padding: 15px;
+    width: 500px;
+}
+.ip2{
+    width: 400px;
+}
+.mountains {
+    background-image: url(img/mountains2.jpg);
+}
+.krakow {
+    background-image: url(img/krakow.jpg);
+}
+.luksemburg {
+    background-image: url(img/luksemburg.jpg);
+}
+.lizbona{
+    background-image: url(img/lizbona.jpg);
+}
+.action-header{
+    background-image: url(img/magdeburg.jpg);
+}
+.comedy-header{
+    background-image: url(img/lizbona.jpg);
+}
+.waszyngton{
+    background-image: url(img/waszyngton.jpg);
+}
+.amsterdam{
+    background-image: url(img/amsterdam.jpg);
+}
+.praga{
+    background-image: url(img/praga.jpg);
+}
+.mexico {
+    background-image: url(img/mexico.jpg);
+}
+.losvegas {
+    background-image: url(img/lasvegas.jpg);
+}
+.machupichu {
+    background-image: url(img/machupichu.jpg);
+}
+.newyork {
+    background-image: url(img/newyork.jpg);
+}
+.roma {
+    background-image: url(img/roma.jpg);
+}
+.paris {
+    background-image: url(img/paris.jpg);
+}
+.barcelona {
+    background-image: url(img/barcelona.jpg);
+}
+.bridge {
+    background-image: url(img/bridge.jpg);
+}
+.category-text{
+    column-count: 2;
+    column-gap: 40px;
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+}
+.poster{
+    text-align: center;
+}
+
+.category-title{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    color: black;
+}
+
+@media screen and (max-width: 880px) {
+    .category-text{
+        column-count: 1 !important;
+        width: 90% !important;
+    }
+    .dot {
+        height: 100px;
+        width: 100px;  
+    }
+    .category-nav{
+        bottom: 50px;
+    }
+    nav div{
+        visibility: hidden;
+        width: 100%;
+        pointer-events: none;
+    }
+    nav:active,nav:hover{
+        height: 30vh;
+        flex-direction: column;
+        
+    }
+    nav:active div,nav:hover div{
+        visibility: visible;
+        pointer-events: all;
+    }
+    nav #hamburger{
+        display: block;
+        visibility: visible;
+    }
+    .img{
+        width: 300px;
+    }
+    .film{
+        width: 300px;
+    }
+   
+}
+.poster iframe{
+    padding-top: 5px;
+}
+.column{
+    column-count: 1;
+    text-align: center;
+}
